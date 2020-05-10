@@ -28,16 +28,26 @@
   font-size: 22px;
   vertical-align: middle;
   padding: 8px 16px;
+  cursor: pointer;
 }
 
 .main-nav__item {
   display: inline-block;
   padding: 10px 15px;
+  text-decoration: none;
 }
 
-.main-nav__button:hover,
-.main-nav__button:active {
+li .main-nav__link,
+header .main-nav__link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
   color: #4094c8;
   background-color: #ffffff;
   cursor: pointer;
+  border-radius: 8px;
 }

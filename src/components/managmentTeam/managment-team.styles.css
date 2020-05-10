@@ -1,0 +1,39 @@
+#managmetn-team__main {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+  color: white;
+}
+
+#managmetn-team__main .book-title {
+  color: white;
+}
+
+.managment-team__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.managment-team__list-item {
+  display: inline-block;
+  font-weight: bold;
+  width: 30%;
+  vertical-align: top;
+}
+
+.managment-team__description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.managment-team__image {
+  background-color: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+}

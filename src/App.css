@@ -2,3 +2,13 @@
   text-align: center;
   margin: 0;
 }
+
+.books-main__section {
+  color: #4094c8;
+  cursor: pointer;
+}
+
+.books-main__section:hover,
+.books-main__section:active {
+  color: #085280;
+}
