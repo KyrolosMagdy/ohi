@@ -18,13 +18,8 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="main-nav__item " key="2">
-            <Link to="/add-books" className="main-nav__link">
+            <Link to="/add-books" className="cta">
               Add books
-            </Link>
-          </li>
-          <li className="main-nav__item " key="3">
-            <Link to="/about-us" className="main-nav__link">
-              About Us
             </Link>
           </li>
         </ul>

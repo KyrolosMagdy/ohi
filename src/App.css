@@ -4,6 +4,7 @@
 }
 
 .books-main__section {
+  display: inline-block;
   color: #4094c8;
   cursor: pointer;
 }

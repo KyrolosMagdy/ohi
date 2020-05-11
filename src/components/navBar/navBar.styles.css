@@ -1,7 +1,11 @@
 .main-header {
+  position: fixed;
+  top: 0;
   background-color: #4094c8;
   width: 100%;
   padding: 8px 16px;
+  box-sizing: border-box;
+  z-index: 100000;
 }
 
 .main-nav__items {
@@ -44,10 +48,26 @@ header .main-nav__link {
   padding: 10px 15px;
 }
 
+li .cta {
+  background-color: #ff1b68;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+li .cta:hover,
+li .cta:active {
+  color: #ff1b68;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
 .main-nav__link:hover,
 .main-nav__link:active {
   color: #4094c8;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 8px;
+  box-shadow: 5px 5px 5px black;
 }

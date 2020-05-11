@@ -13,7 +13,7 @@ const books = [
     title: "Amazing Book",
     author: "me",
     section: "civil",
-    available: true,
+    available: false,
     img:
       "https://assets.entrepreneur.com/content/3x2/2000/20191219170611-GettyImages-1152794789.jpeg",
     description: "amazing topic"
@@ -47,7 +47,7 @@ const books = [
   }
 ];
 
-const App = history => {
+const App = () => {
   return (
     <div className="App">
       <NavBar />
@@ -57,7 +57,10 @@ const App = history => {
           path="/"
           exact
         />
-        <Route component={SingleBook} path="/books/:bookId" />
+        <Route
+          render={props => <SingleBook {...props} books={books} />}
+          path="/books/:bookId"
+        />
         <Route component={BooksPage} path="/books" exact />
       </Switch>
       <Footer />
