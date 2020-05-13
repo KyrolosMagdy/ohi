@@ -11,12 +11,12 @@ import "./App.css";
 
 const books = [
   {
-    title: "Amazing Book",
-    author: "me",
+    title: "Project Managment",
+    author: "Dr: Ahmed",
     section: "civil",
-    available: false,
+    available: true,
     img:
-      "https://www.imindq.com/Portals/0/EasyDNNnews/273/img-book-mind-mapping.jpg",
+      "https://egyptinnovate.com/sites/default/files/styles/details_page_image_width_654/public/Project-Management.jpg?itok=SIynbALN",
     description: "amazing topic"
   },
   {
@@ -63,7 +63,7 @@ const App = () => {
           render={props => <SingleBook {...props} books={books} />}
           path="/books/:bookId"
         />
-        <Route component={BooksPage} path="/books" exact />
+        <Route render={props => <BooksPage {...props} books={books} />} path="/books" exact />
       </Switch>
       <Footer />
     </div>
