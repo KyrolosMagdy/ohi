@@ -7,7 +7,8 @@ import "./HomePage.styles.css";
 const HomePage = ({ books, history }) => {
   return (
     <div className="homepage-container">
-      <Intro />
+      <div className="hidden-wrapper"></div>
+      <Intro GreatingMessage={"Home Page"} />
       <h1
         className="books-main__section"
         onClick={() => history.push("/books")}

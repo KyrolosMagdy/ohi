@@ -1,3 +1,19 @@
+.hidden-wrapper {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100%;
+}
+
+.homepage-container {
+  position: relative;
+  top: 2.3rem;
+}
+
 .bookgallery-link {
   width: 100%;
   margin: auto;

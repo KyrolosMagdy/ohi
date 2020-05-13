@@ -3,7 +3,7 @@ import "./managment-team.styles.css";
 
 const ManagmentTeam = () => (
   <section id="managmetn-team__main">
-    <h1 className="book-title">مجلس الادارة</h1>
+    <h1>مجلس الادارة</h1>
     <ul className="managment-team__list">
       <li className="managment-team__list-item">
         <div className="managment-team__image"></div>
