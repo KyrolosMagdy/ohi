@@ -3,22 +3,25 @@
   margin-top: 2rem;
   padding: 16px;
   color: white;
+  margin: 0 auto;
+  width: auto;
 }
 
-#managmetn-team__main .book-title {
+#managmetn-team__main {
   color: white;
+  margin: 2rem auto;
 }
 
 .managment-team__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
 }
 
 .managment-team__list-item {
   display: block;
-  margin: 3rem auto;
+  margin: auto;
   font-weight: bold;
   width: 30%;
 }
@@ -26,13 +29,13 @@
 .managment-team__description {
   text-align: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .managment-team__image {
   background-color: #ffcede;
-  width: 128px;
-  height: 128px;
+  width: 6rem;
+  height: 6rem;
   border: 2px solid #424242;
   border-radius: 50%;
   margin: auto;

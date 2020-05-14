@@ -26,7 +26,7 @@
   padding: 0.5rem 0;
   border-bottom: 0.5rem solid white;
   border-top: 0.5rem solid white;
-  width: 40%;
+  max-width: 40%;
   text-align: center;
   margin: 0;
   vertical-align: middle;
@@ -46,7 +46,6 @@
     bottom: 18rem;
     margin: 0 auto;
     font-size: 3rem;
-    width: 40%;
     border-radius: 0.5rem;
   }
 }

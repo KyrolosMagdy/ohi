@@ -1,12 +1,11 @@
 .project-section {
   background: linear-gradient(to bottom, #260042 18%, #4b0082 79%, #6f339b);
   clip-path: polygon(0 2%, 100% 0, 100% calc(100% - 40px), 0 100%);
-  width: 30%;
-  display: inline-block;
+  display: block;
 }
 
 .book-gallery__wrapper {
-  width: 25rem;
+  width: 15rem;
   margin-left: 15px;
   display: inline-block;
   text-decoration: none;
@@ -17,10 +16,11 @@
   padding: 0.5rem;
   position: relative;
   top: 15px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   background-color: #4094c8;
   border-radius: 2rem;
-  margin: 5rem;
+  margin: 0;
+  width: 100%;
 }
 
 .project-section h1 {

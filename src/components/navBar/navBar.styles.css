@@ -88,7 +88,7 @@ li .cta:active,
   left: 0;
   background: white;
   width: 70%;
-  height: 50vh;
+  height: 70vh;
 }
 
 .mobile-nav__item img {
@@ -129,7 +129,7 @@ li .cta:active,
   width: 3rem;
   background: transparent;
   position: relative;
-  left: -11rem;
+  left: -8rem;
   border: none;
   cursor: pointer;
   padding-top: 0;
