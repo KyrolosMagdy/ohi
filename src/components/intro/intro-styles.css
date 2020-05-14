@@ -1,6 +1,8 @@
 .intro-container {
+  display: flex;
   max-height: 20rem;
   vertical-align: middle;
+  width: 100%;
 }
 
 .intro__image {
@@ -9,13 +11,12 @@
   padding: 0;
   margin: 0;
   filter: blur(5px);
+  display: inline-block;
 }
 
 .intro__greating-messsage {
-  position: relative;
+  display: inline-block;
   z-index: 1;
-  bottom: 10rem;
-  left: 7rem;
   font-size: 1.5rem;
   color: white;
   padding: 0.5rem 0;
