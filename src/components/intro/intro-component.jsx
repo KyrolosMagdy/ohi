@@ -6,7 +6,7 @@ const Intro = ({ GreatingMessage }) => {
   return (
     <div className="intro-container">
       <img src={library} className="intro__image" alt="library" />
-      <h1 className="intro__greating-messsage"> {GreatingMessage} </h1>
+      <h1 className="intro__greating-messsage">{GreatingMessage} </h1>
     </div>
   );
 };

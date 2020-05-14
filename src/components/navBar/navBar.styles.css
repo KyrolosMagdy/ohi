@@ -67,7 +67,7 @@ li .cta:hover,
 li .cta:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255, 27, 104, 0.3);
 }
 
 .main-nav__link:hover,
@@ -86,31 +86,50 @@ li .cta:active,
   z-index: 101;
   top: 0;
   left: 0;
-  background: #4094c8;
+  background: white;
   width: 70%;
-  height: 100vh;
+  height: 50vh;
+}
+
+.mobile-nav__item img {
+  width: 7rem;
+  height: 7.5rem;
+  margin: 3rem;
+  margin-bottom: 5rem;
+}
+
+.mobile-nav__item button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .mobile-nav__items {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
+  margin-top: 9rem;
   padding: 0;
   text-align: center;
 }
 
-.mobile-nav__item {
+.mobile-nav__item button {
   margin: 1rem 0;
+  color: #ff1b68;
+  margin: 1.1rem;
 }
 
-.mobile-nav__item a {
-  font-size: 1.5rem;
+.mobile-nav__item button {
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .toggle-button {
   width: 3rem;
   background: transparent;
+  position: relative;
+  left: -11rem;
   border: none;
   cursor: pointer;
   padding-top: 0;
@@ -129,6 +148,10 @@ li .cta:active,
   margin: 0.6rem 0;
 }
 
+.mobile-nav__item--cta button {
+  color: white;
+}
+
 .close-button {
   cursor: pointer;
   display: inline-block;
@@ -137,8 +160,18 @@ li .cta:active,
   top: 1rem;
   padding: 5px;
   font-weight: bold;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .open {

@@ -18,7 +18,9 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <header className="main-header">
+      <header
+        className={`main-header ${this.state.isToggleOpen ? "backdrop" : null}`}
+      >
         <div className="main-nav__brand">
           <button
             className="toggle-button"
@@ -47,7 +49,7 @@ class NavBar extends React.Component {
           </ul>
         </nav>
         <nav
-          className={`mobile-nav ${this.state.isToggleOpen ? "open" : null}`}
+          className={`mobile-nav  ${this.state.isToggleOpen ? "open" : null}`}
         >
           <div
             className="close-button"
@@ -57,11 +59,25 @@ class NavBar extends React.Component {
             &#10005;{" "}
           </div>
           <ul className="mobile-nav__items">
-            <li className="mobile-nav__item">
-              <Link to="/books">Books</Link>
-            </li>
             <li className="mobile-nav__item mobile-nav__item--cta">
-              <Link to="/add-books">Add books</Link>
+              <Link to="/add-books">
+                {" "}
+                <button onClick={() => this.handleToggleButton()}>
+                  Add books
+                </button>{" "}
+              </Link>
+            </li>
+            <li className="mobile-nav__item">
+              <Link to="/">
+                <button onClick={() => this.handleToggleButton()}>
+                  Home Page
+                </button>
+              </Link>
+            </li>
+            <li className="mobile-nav__item">
+              <Link to="/books">
+                <button onClick={() => this.handleToggleButton()}>Books</button>
+              </Link>
             </li>
           </ul>
         </nav>

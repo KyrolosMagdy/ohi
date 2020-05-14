@@ -1,5 +1,5 @@
 .intro-container {
-  display: flex;
+  display: inline-block;
   max-height: 20rem;
   vertical-align: middle;
   width: 100%;
@@ -16,8 +16,12 @@
 
 .intro__greating-messsage {
   display: inline-block;
+  position: relative;
+  bottom: 15rem;
+  color: aqua;
   z-index: 1;
   font-size: 1.5rem;
+  margin: 0 auto;
   color: white;
   padding: 0.5rem 0;
   border-bottom: 0.5rem solid white;
@@ -40,7 +44,7 @@
 
   .intro__greating-messsage {
     bottom: 18rem;
-    left: 26rem;
+    margin: 0 auto;
     font-size: 3rem;
     width: 40%;
     border-radius: 0.5rem;

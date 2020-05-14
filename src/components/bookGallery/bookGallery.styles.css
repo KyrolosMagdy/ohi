@@ -6,7 +6,7 @@
 }
 
 .book-gallery__wrapper {
-  width: 20rem;
+  width: 25rem;
   margin-left: 15px;
   display: inline-block;
   text-decoration: none;
@@ -14,11 +14,11 @@
 
 .book-title a {
   text-decoration: none;
+  padding: 0.5rem;
   position: relative;
   top: 15px;
   font-size: 1.1rem;
   background-color: #4094c8;
-  padding: 0.6rem;
   border-radius: 2rem;
   margin: 5rem;
 }

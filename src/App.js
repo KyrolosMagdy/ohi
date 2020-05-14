@@ -20,7 +20,7 @@ const books = [
     description: "amazing topic"
   },
   {
-    title: "Amazing Book 1",
+    title: "Amazing Book and super",
     author: "me",
     available: true,
     section: "civil",
@@ -63,7 +63,11 @@ const App = () => {
           render={props => <SingleBook {...props} books={books} />}
           path="/books/:bookId"
         />
-        <Route render={props => <BooksPage {...props} books={books} />} path="/books" exact />
+        <Route
+          render={props => <BooksPage {...props} books={books} />}
+          path="/books"
+          exact
+        />
       </Switch>
       <Footer />
     </div>
