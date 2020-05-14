@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ohi/static/css/main.c602eb00.chunk.css",
+    "main.js": "/ohi/static/js/main.8bcc7027.chunk.js",
+    "main.js.map": "/ohi/static/js/main.8bcc7027.chunk.js.map",
+    "runtime-main.js": "/ohi/static/js/runtime-main.e1810383.js",
+    "runtime-main.js.map": "/ohi/static/js/runtime-main.e1810383.js.map",
+    "static/js/2.c1e30ca9.chunk.js": "/ohi/static/js/2.c1e30ca9.chunk.js",
+    "static/js/2.c1e30ca9.chunk.js.map": "/ohi/static/js/2.c1e30ca9.chunk.js.map",
+    "index.html": "/ohi/index.html",
+    "precache-manifest.19d47d06a4684ae8ae2afae73926bd8e.js": "/ohi/precache-manifest.19d47d06a4684ae8ae2afae73926bd8e.js",
+    "service-worker.js": "/ohi/service-worker.js",
+    "static/css/main.c602eb00.chunk.css.map": "/ohi/static/css/main.c602eb00.chunk.css.map",
+    "static/js/2.c1e30ca9.chunk.js.LICENSE.txt": "/ohi/static/js/2.c1e30ca9.chunk.js.LICENSE.txt",
+    "static/media/Library.jpg": "/ohi/static/media/Library.e5193bd0.jpg",
+    "static/media/logo.png": "/ohi/static/media/logo.c8f693fb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1810383.js",
+    "static/js/2.c1e30ca9.chunk.js",
+    "static/css/main.c602eb00.chunk.css",
+    "static/js/main.8bcc7027.chunk.js"
+  ]
+}
