@@ -1,11 +1,12 @@
 import React from "react";
 import Intro from "../../components/intro/intro-component";
+import BookGallery from '../../containers/booksGallery/booksGallery.container';
 import "./Books.styles.css";
 
-const BooksPage = () => (
+const BooksPage = ({books}) => (
   <div className="bookspage__container">
     <Intro GreatingMessage={"Books"} />
-    <h1> Here we are supposed to get all the Books we have</h1>
+    <BookGallery books={books}/>
   </div>
 );
 
