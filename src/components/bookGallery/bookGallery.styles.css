@@ -1,11 +1,6 @@
-.project-section {
-  background: linear-gradient(to bottom, #260042 18%, #4b0082 79%, #6f339b);
-  clip-path: polygon(0 2%, 100% 0, 100% calc(100% - 40px), 0 100%);
-  display: block;
-}
-
 .book-gallery__wrapper {
   width: 15rem;
+  margin: 0;
   margin-left: 15px;
   display: inline-block;
   text-decoration: none;
@@ -59,7 +54,7 @@
 
 .individual-project-container {
   margin-right: 0.75rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -112,5 +107,12 @@
   .cardContainer {
     box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
     margin-top: 5rem;
+  }
+
+  .book-gallery__wrapper {
+    width: 20rem;
+    margin-left: 15px;
+    display: inline-block;
+    text-decoration: none;
   }
 }
