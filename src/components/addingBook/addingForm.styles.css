@@ -1,32 +1,150 @@
-.adding-book__container{
-    display: inline-block;
-    width: 50vw;
-    height: 50vh;
-    border: 5px solid #4094c8;
-    margin: 3rem;
-    color: #4094c8;
+.adding-book__container {
+  display: inline-block;
+  color: #4094c8;
+}
+
+.adding-book__wrapper {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  margin: 3.5rem auto;
+  z-index: 101;
+  border: 2px solid #4094c8;
+  background-color: white;
+}
+
+.adding-book__form-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .adding-book__container input {
-    display: block;
-    margin: 1.5rem auto;
-
-    width: 25rem;
-    background-color: aliceblue;
-    color: #4094c8;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-left: 0;
+  width: 13rem;
+  background-color: aliceblue;
+  color: #4094c8;
 }
 
-.adding-book__button{
+.adding-book__container input:focus {
+  outline: none;
+  background-color: #c3eaf0;
+  border-color: #4094c8;
+  color: #4094c8;
+}
+
+.adding-book__button {
+  background-color: #4094c8;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 5px rgba(64, 148, 200, 1rem);
+  margin-top: 2rem;
+}
+
+.adding-book__button:hover,
+.adding-book__button:active {
+  cursor: pointer;
+  background-color: white;
+  color: #4094c8;
+}
+
+.close-button__adding-book {
+  background-color: transparent;
+  margin-left: 0;
+  margin-right: 0.6rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: red;
+  border: 2px solid red;
+  padding: 0;
+  width: 1rem;
+  cursor: pointer;
+}
+
+.adding-book__form label {
+  display: block;
+  margin-left: 0;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.adding-book__form-content input.invalid {
+  border-color: red;
+  background-color: #ee9292;
+  color: white;
+}
+
+@media (min-width: 40rem) {
+  .adding-book__form {
+    margin-top: 2rem;
+  }
+
+  .close-button__adding-book {
+    margin-left: 0.8rem;
+  }
+  .adding-book__form label {
+    display: block;
+    margin-left: 0;
+    text-align: left;
+    margin-top: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .adding-book__button {
     background-color: #4094c8;
     color: white;
     padding: 1rem;
     border-radius: 2rem;
     box-shadow: 5px 5px 5px rgba(64, 148, 200, 1rem);
+    margin-top: 3rem;
+  }
+  .adding-book__wrapper {
+    position: relative;
+    width: 50vw;
+    height: 55vh;
+    margin: 15rem auto;
+    z-index: 101;
+    border: 5px solid #4094c8;
+    background-color: white;
+  }
+  .adding-book__form-content {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .adding-book__container input {
+    display: block;
+    margin: 0 auto;
+    font: inherit;
+    width: 25rem;
+    background-color: aliceblue;
+    color: #4094c8;
+    border: 1px solid #ccc;
+  }
 }
 
-.adding-book__button:hover,
-.adding-book__button:active {
-    cursor: pointer;
-    background-color: white;
-    color: #4094c8;
+@media (max-width: 40rem) {
+  .adding-book__wrapper h2 {
+    font-size: 0.9rem;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .adding-book__wrapper span {
+    font-size: 1rem;
+    display: block;
+  }
+
+  .close-button__adding-book {
+    display: inline-block;
+  }
+}
+
+.disabled {
+  border-color: #8b8a8a;
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #8b8a8a;
 }

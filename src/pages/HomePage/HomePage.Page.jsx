@@ -2,12 +2,16 @@ import React from "react";
 import BooksGallery from "../../containers/booksGallery/booksGallery.container";
 import ManagmentTeam from "../../components/managmentTeam/managment-team.component";
 import Intro from "../../components/intro/intro-component";
-import "./HomePage.styles.css";
 
-const HomePage = ({ books, history }) => {
+import { connect } from "react-redux";
+
+import "./HomePage.styles.css";
+import AddingBook from "../../components/addingBook/addingForm.component";
+
+const HomePage = ({ history, isToggleOpen }) => {
   return (
-    <div className="homepage-container">
-      <div className="hidden-wrapper"></div>
+    <div className={`homepage-container`}>
+      {isToggleOpen ? <AddingBook /> : null}
       <Intro GreatingMessage={"Home Page"} />
       <h1
         className="books-main__section"
@@ -16,12 +20,15 @@ const HomePage = ({ books, history }) => {
         Books
       </h1>
       <div className="bookgallery-link">
-        <BooksGallery books={books} />
+        <BooksGallery />
       </div>
-
       <ManagmentTeam />
     </div>
   );
 };
 
-export default HomePage;
+const mapStateToProps = state => ({
+  isToggleOpen: state.books.isToggleOpen
+});
+
+export default connect(mapStateToProps)(HomePage);

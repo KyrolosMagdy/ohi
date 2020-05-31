@@ -1,8 +1,6 @@
 .book-gallery__wrapper {
   width: 15rem;
   margin: 0;
-  margin-left: 15px;
-  display: inline-block;
   text-decoration: none;
 }
 
@@ -40,9 +38,8 @@
   font-weight: bold;
 }
 
-.customer-project-header {
-  margin-top: 50px;
-}
+/* .customer-project-header {
+} */
 
 .projects-container {
   position: relative;
@@ -53,9 +50,8 @@
 }
 
 .individual-project-container {
-  margin-right: 0.75rem;
-  margin-top: 3rem;
   background-size: 100% 100%;
+  margin-top: 3rem;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -112,7 +108,6 @@
   .book-gallery__wrapper {
     width: 20rem;
     margin-left: 15px;
-    display: inline-block;
     text-decoration: none;
   }
 }

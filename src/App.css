@@ -7,7 +7,18 @@
   display: inline-block;
   color: #4094c8;
   cursor: pointer;
-  margin-top: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 40rem) {
+  .books-main__section {
+    display: inline-block;
+    color: #4094c8;
+    cursor: pointer;
+    margin-top: 8rem;
+    margin-bottom: 0;
+  }
 }
 
 .books-main__section:hover,

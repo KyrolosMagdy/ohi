@@ -1,6 +1,13 @@
 .single-book__container {
   text-align: center;
   padding-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 40rem) {
+  .single-book__article {
+    padding-top: 8rem;
+  }
 }
 
 .book-title {

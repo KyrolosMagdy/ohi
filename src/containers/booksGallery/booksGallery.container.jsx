@@ -1,5 +1,7 @@
 import React from "react";
 import BookGallery from "../../components/bookGallery/bookGallery.component";
+import { connect } from "react-redux";
+
 import "./booksGallery.styles.css";
 
 const BooksGallery = ({ books }) => {
@@ -17,4 +19,8 @@ const BooksGallery = ({ books }) => {
   );
 };
 
-export default BooksGallery;
+const mapStateToProps = state => ({
+  books: state.books.books
+});
+
+export default connect(mapStateToProps)(BooksGallery);

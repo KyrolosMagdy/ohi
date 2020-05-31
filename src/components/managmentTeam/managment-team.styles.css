@@ -29,7 +29,7 @@
 .managment-team__description {
   text-align: center;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
 }
 
 .managment-team__image {
@@ -44,5 +44,13 @@
 @media (min-width: 40rem) {
   .managment-team__list-item {
     display: inline-block;
+  }
+
+  .managment-team__image {
+    margin: 2rem auto;
+  }
+
+  .managment-team__description {
+    font-size: 1.1rem;
   }
 }

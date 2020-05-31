@@ -1,14 +1,17 @@
 import React from "react";
 import Intro from "../../components/intro/intro-component";
+import AddingBook from "../../components/addingBook/addingForm.component";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./book.styles.css";
 
-const SingleBook = ({ match, books }) => {
+const SingleBook = ({ match, books, isToggleOpen }) => {
   let currentId = match.params.bookId;
   return (
     <div className="single-book__container">
+      {isToggleOpen ? <AddingBook /> : null}
       <Intro GreatingMessage={currentId} />
-      <article>
+      <article className="single-book__article">
         {books.map(book => {
           return book.title === currentId ? (
             <div>
@@ -47,4 +50,9 @@ const SingleBook = ({ match, books }) => {
   );
 };
 
-export default SingleBook;
+const mapStateToProps = state => ({
+  books: state.books.books,
+  isToggleOpen: state.books.isToggleOpen
+});
+
+export default connect(mapStateToProps)(SingleBook);

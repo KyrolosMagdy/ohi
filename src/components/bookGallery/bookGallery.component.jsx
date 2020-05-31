@@ -12,11 +12,8 @@ class BookGallery extends Component {
   }
 
   flipCard = () => {
-    this.setState({ flip: true });
-  };
-
-  flipCardBack = () => {
-    this.setState({ flip: false });
+    const currentFlipState = this.state.flip;
+    this.setState({ flip: !currentFlipState });
   };
 
   render() {
@@ -31,8 +28,8 @@ class BookGallery extends Component {
             this.state.flip === false ? `url(${bookDetails.img})` : ""
         }}
         onMouseEnter={this.flipCard}
-        onMouseLeave={this.flipCardBack}
-        onClick={this.state.flip ? this.flipCardBack : this.flipCard}
+        onMouseLeave={this.flipCard}
+        onClick={this.flipCard}
         key=""
       >
         <header className="box">
